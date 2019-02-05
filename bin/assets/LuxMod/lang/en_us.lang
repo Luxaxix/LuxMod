@@ -1,1 +1,5 @@
-item.luxitem1.name=Luxaxix1
+item.luxItem1.name=LuxIngot
+tile.luxBlock1.name=LuxBlock
+item.luxDust1.name=LuxDust
+tile.luxBlockOre1.name=LuxDustOre
+tile.luxBlockRng.name=LuxChance

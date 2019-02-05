@@ -14,20 +14,23 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid=Reference.MODID)
 public class ModItems {
    
-   static Item luxItem1;
+   public static Item luxItem1;
+   public static Item luxDust1;
    
    @SubscribeEvent
    public static void registerItems(RegistryEvent.Register<Item> event) {
-      event.getRegistry().registerAll(luxItem1);      
+      event.getRegistry().registerAll(luxItem1, luxDust1);      
    }
    
    public static void init() {
       luxItem1 = new ItemBasic("luxItem1").setCreativeTab(CreativeTabs.MISC).setMaxStackSize(32);
+      luxDust1 = new ItemBasic("luxDust1").setCreativeTab(CreativeTabs.MISC).setMaxStackSize(64);
    }
    
    @SubscribeEvent
    public static void registerRenders(ModelRegistryEvent event) {
       registerRender(luxItem1);
+      registerRender(luxDust1);
    }
    
    public static void registerRender(Item item) {

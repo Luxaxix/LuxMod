@@ -1,6 +1,8 @@
 package luxmod;
 
+import luxmod.init.ModBlocks;
 import luxmod.init.ModItems;
+import luxmod.init.ModRecipes;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -18,15 +20,19 @@ public class LuxMod {
    public void preInit(FMLPreInitializationEvent event) {
       System.out.println(Reference.MODID + ":preInit");
       ModItems.init();
+      ModBlocks.init();
    }
    
    @EventHandler
    public void init(FMLInitializationEvent event) {
       System.out.println(Reference.MODID + ":init");
+      ModRecipes.init();
    }
    
    @EventHandler
    public void postInit(FMLPostInitializationEvent event) {
       System.out.println(Reference.MODID + ":postInit");
    }
+   
+
 }
