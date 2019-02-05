@@ -1,0 +1,16 @@
+[
+{
+  "modid": "luxmod",
+  "name": "Luxaxix Mod",
+  "description": "Adds stuff from Luxaxix",
+  "version": "1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Luxaxix"],
+  "credits": "My mom",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
