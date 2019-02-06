@@ -20,7 +20,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class ModBlocks {
    
    static Block luxBlock1;
-   static Block luxBlockOre1;
+   public static Block luxBlockOre1;
    static Block luxBlockRng;
    
    public static void init() {

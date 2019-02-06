@@ -3,3 +3,5 @@ tile.luxBlock1.name=LuxBlock
 item.luxDust1.name=LuxDust
 tile.luxBlockOre1.name=LuxDustOre
 tile.luxBlockRng.name=LuxChance
+item.luxFood.name=LuxFood
+item.luxFoodGlow.name=LuxFoodGlow
